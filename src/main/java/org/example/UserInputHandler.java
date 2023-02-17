@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class UserInputHandler {
 
     public static String takeNotEmptyStringFromUser(Scanner scanner, String field) {
-        String string = "";
+        String string;
         do {
             System.out.printf("Input %s. It cannot be empty!\n", field);
             string = scanner.nextLine();
@@ -22,7 +22,7 @@ public class UserInputHandler {
                 System.out.println("That's not a number!");
                 scanner.next();
             }
-            salary = scanner.nextInt();//
+            salary = scanner.nextInt();
             scanner.nextLine();
 
             if (salary > 0) {
